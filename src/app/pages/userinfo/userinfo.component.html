@@ -1,0 +1,27 @@
+<nav >
+    <h1  style="background-color: skyblue;">Fly More Fly High</h1>
+    <h3 style="font-family: cursive; color:red;">Created By Mr.Aaditya Kumar</h3>
+    <marquee behaviour="slice" scrollamount="17" direction="left" height="150" >
+       <img src="assets/images/plane_1.jpg" height="155" >
+       </marquee>
+       
+      </nav>
+       <div class="container">
+         <div class="row justify-content-center p-2">
+         <img   src="assets/images/namaste.gif" height="160">
+        </div >
+        <h1 style=" color: red; margin-left: 35%;">Welcome To Airlines</h1>
+        <h1 style=" color: red; margin-left: 38%;">Ticket Booking</h1>
+       <div class="cont">
+        <h1>Airlines Lists</h1>
+        <ul *ngFor="let tt of tick">
+          <li><a href="#" routerLink="/airasia">{{tt.aa}}</a></li> 
+          <li><a href="#" routerLink="/airindia">{{tt.ai}}</a></li>
+          <li><a href="#" routerLink="/indigo">{{tt.in}}</a></li> 
+          <li><a href="#" routerLink="/goindia">{{tt.go}}</a></li> 
+         
+        </ul>
+        
+        
+      </div>
+       </div>

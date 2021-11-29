@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "bookingtickets-46fa9": {
+      "hosting": {
+        "ticket": [
+          "bookingtickets-46fa9"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "bookingtickets-46fa9"
+  }
+}

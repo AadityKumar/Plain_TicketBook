@@ -1,0 +1,30 @@
+<nav class="navbar navbar-dark" style="background-color: royalblue;">
+    <h2 style="color: white;">AirAsia</h2>
+        <div *ngIf="authservice.currentUser">
+            <h4><b>User Email: </b>{{authservice.currentUserName}}</h4>
+            <button class="btn-danger" (click)="authservice.signout()">Logout</button>
+           <button class="btn-danger"><a style="color: white;" href="#" routerLink="/userinfo">Back</a></button>
+        </div>
+   
+
+  </nav>
+  <div class="container">
+     <div class="row justify-content-center p-2">
+       <h1>Booking Tickets Details</h1>
+     </div>
+   
+     <div class="form-group" >
+       <input type="text" class="form-control" [(ngModel)]="employeeName" placeholder="Entre From">
+     </div>
+     <div class="form-group">
+      <input type="number" class="form-control" [(ngModel)]="employeeAge" placeholder="Number Of Seats">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" [(ngModel)]="employeeAddress" placeholder="Entre Destination">
+    </div>
+    <div class="form-group">
+      <button class="btn btn-primary" (click)="CreateRecord()" [disabled]="!employeeName || !employeeAge || !employeeAddress">Create Employee</button>
+    </div>
+  
+    <img src="assets/images/pplane.jpg" height="360">
+</div>
